@@ -29,19 +29,19 @@ def stats(update, context):
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
-    stats = f'<b>╭─────────「  ⭕️ BOT STATISTICS ⭕️  」</b>\n' \
-            f'<b>│</b>\n' \
-            f'<b>├  ⏰ Bot Uptime : {currentTime}</b>\n' \
-            f'<b>├  💾 Total Disk Space : {total}</b>\n' \
-            f'<b>├  📀 Total Used Space : {used}</b>\n' \
-            f'<b>├  💿 Total Free Space : {free}</b>\n' \
-            f'<b>├  🔼 Total Upload : {sent}</b>\n' \
-            f'<b>├  🔽 Total Download : {recv}</b>\n' \
-            f'<b>├  🖥️ CPU : {cpuUsage}%</b>\n' \
-            f'<b>├  🎮 RAM : {memory}%</b>\n' \
-            f'<b>├  💽 DISK : {disk}%</b>\n' \
-            f'<b>│</b>\n' \
-            f'<b>╰──「 🚸 @AT_BOTS 🚸 」</b>'
+    stats = f'<b>┏┅┅┅┅❰ 𝗕𝗢𝗧 𝗦𝗧𝗔𝗧𝗜𝗦𝗧𝗜𝗖𝗦 ❱ 」</b>\n' \
+            f'<b>┇</b>\n' \
+            f'<b>┣  ⏰ 𝐁𝐎𝐓𝐬 𝐔𝐩𝐭𝐢𝐦𝐞: {currentTime}</b>\n' \
+            f'<b>┣  💾 𝐓𝐨𝐭𝐚𝐥 𝐃𝐢𝐬𝐤 𝐒𝐩𝐚𝐜𝐞: {total}</b>\n' \
+            f'<b>┣  📀 𝐓𝐨𝐭𝐚𝐥 𝐔𝐬𝐞𝐝 𝐒𝐩𝐚𝐜𝐞: {used}</b>\n' \
+            f'<b>┣  💿 𝐓𝐨𝐭𝐚𝐥 𝐅𝐫𝐞𝐞 𝐒𝐩𝐚𝐜𝐞: {free}</b>\n' \
+            f'<b>┣  🔼 𝐓𝐨𝐭𝐚𝐥 𝐔𝐩𝐥𝐨𝐚𝐝: {sent}</b>\n' \
+            f'<b>┣  🔽 𝐓𝐨𝐭𝐚𝐥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: {recv}</b>\n' \
+            f'<b>┣  🖥️ 𝐂𝐏𝐔 : {cpuUsage}%</b>\n' \
+            f'<b>┣  🎮 𝐑𝐀𝐌 : {memory}%</b>\n' \
+            f'<b>┣  💽 𝐃𝐈𝐒𝐊 : {disk}%</b>\n' \
+            f'<b>┇</b>\n' \
+            f'<b>┗┅┅┅┅┅┅「 🚸 @DB_ROBOTS 🚸 」</b>'
     sendMessage(stats, context.bot, update)
 
 
